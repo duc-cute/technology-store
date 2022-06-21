@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoppe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main">
+        <header class="header">
+            <div class="grid wide">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item item-separate">
+                            <i class="fa-solid fa-phone icon__header-phone"></i>
+                            <p class="text__header-phone">Call us free: <a href="tel:000-986-388-000">000-986-388-000</a></p>
+                        </li>
+                        <li class="header__navbar-item">
+                            <i class="fa-solid fa-envelope icon__header-mail"></i>
+                            <p class="text__header-mail">Email: <a href="mailto:duc150120035555@gmai.com" class="hover-effect">sales@yoursite.com</a></p>
+                        </li>
+                    </ul>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item item-separate">
+                            <i class="fa-solid fa-bell notify__header-icon"></i>
+                            <a href="" class="notify__header-text hover-effect">Notify</a>
+                        </li>
+                        <li class="header__navbar-item item-separate">
+                            <i class="fa-solid fa-circle-question help__header-icon"></i>
+                            <a href="" class="help__header-text hover-effect">Help</a>
+                        </li>
+    
+                        <li class="header__navbar-item">
+                            <i class="fa-solid fa-user user__header-icon"></i>
+                            <a href="" class="user__header-text hover-effect" >Login</a>
+                        </li>
+                        
+                    </ul>
+                </nav>
+                <div class="header-with-search">
+                    <div class="header__logo">
+                        <i class="fa-brands fa-asymmetrik header__logo-icon"></i>
+                        <a href="#"><p class="header__logo-text">Dev-House</p></a>
+                    </div>
+                    <div class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="I'm searching for..." required>
+                        </div>
+                        <div class="header__search-selection">
+                            <span class="header__search-option">
+                                <p class="text__search-js">All Categories</p>
+                                <ul class="header__category header__category-js">
+                                    <li class="header__category-item">
+                                        <i class="fa-solid fa-caret-right category-item-icon"></i>
+                                        All Categories
+                                    </li>
+                                    <li class="header__category-item">
+                                        <i class="fa-solid fa-caret-right category-item-icon"></i>
+                                        Bluetooth & Wireless Speakers
+                                    </li>
+                                    <li class="header__category-item">
+                                        <i class="fa-solid fa-caret-right category-item-icon"></i>
+                                        Camera, Photo & Video
+                                    </li>
+                                    <li class="header__category-item">
+                                        <i class="fa-solid fa-caret-right category-item-icon"></i>
+                                        Computers & Tablets
+                                    </li>
+                                    <li class="header__category-item">
+                                        <i class="fa-solid fa-caret-right category-item-icon"></i>
+                                        Headphone
+                                    </li>
+                                    <li class="header__category-item">
+                                        <i class="fa-solid fa-caret-right category-item-icon"></i>
+                                        Video games
+                                    </li>
+                                </ul>
+                            </span>
+                            <i class="fa-solid fa-caret-down search__icon-down btn__search-js"></i>
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="fa-solid fa-magnifying-glass header__search-btn-icon"></i>
+                        </button>
+                    </div>
+                    <div class="header__cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <div class="number-items">0</div>
+                        <p class="price-text">Cart:<h3 class="prices-number"> $0.00</h3></p>
+                    </div>
+                </div>
+            </div>
+            <div class="header__menu-primary">
+                <div class="header__menu-block">
+                    <ul class="menu__list">
+                        <li class="menu__list-item item-separate"><a href="">Home</a></li>
+                        <li class="menu__list-item item-separate"><a href="">Shop</a></li>
+                        <li class="menu__list-item item-separate"><a href="">Page</a></li>
+                        <li class="menu__list-item"><a href="">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="header__menu-gradient">
+                    <ul class="menu__list">
+                        <li class="menu__list-item"><a href="">Flash Deals</a></li>
+                        <li class="menu__list-item"><a href="">Tech Discovery</a></li>
+                        <li class="menu__list-item"><a href="">Trending Styles</a></li>
+                        <li class="menu__list-item"><a href="">Gift Cards</a></li>
+                        
+                    </ul>
+                    
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <!-- SliderShow -->
+           <div class="container__slides">
+             <div class="myslides">
+                <img src="./assets/img/slide1_replay.jpg" alt="">
+            </div>
+            <div class="myslides">
+                <img src="./assets/img/slide3_replay.jpg" alt="">
+                <div class="content-section">
+                    <h2 class="slide__heading ">women style</h2>
+                    <p class="slide__desc ">NEW DESIGN 2020.<br><span >Lorem usus legentis in is qui facis eorum claritatem</span></p>
+                    <button class="btn__go-shop">Shop Now</button>
+                </div>
+            </div>
+            <div class="myslides">
+                <img src="./assets/img/slider9_replay.jpg" alt="">
+                <div class="content-section">
+                    <p class="slide__heading">the new tech gift you are</p>
+                    <p class="slide__desc">WISHING FOR<br><span>is right here</span></p>
+                    <button class="btn__go-shop">Shop Now</button>
+                </div>
+            </div>
+            <div class="list-dot">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+           </div>
+
+           <!-- Products -->
+            <div class="grid wide flag__position">
+                <div class="row product__content">
+                    <div class="l-2 product__name">
+                        <i class="fa-solid fa-headphones-simple product__name-icon"></i>
+                        <div class="product__name-text">Headphones</div>
+                    </div>
+
+                    <div class="l-10 product-list">
+                        <div class="row  view__all ">
+                            <a href="#">View All</a>
+                            <i class="fa-solid fa-arrow-right-long view__all-icon"></i>
+                            
+                        </div>
+                       <div class="block__product">
+                        <div class="row " >
+                            <div class="l-2-4">
+                                <div class="product__item">
+                                    <img src="./assets/img/project_img/Hp1.jpg" alt="">
+                                    <div class="product__item-desc">
+                                        <div class="product__icon-list">
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                        </div>
+                                        <div class="product__item-name">
+                                            Dummy Product Model 20
+                                        </div>
+                                        <div class="product__item-price">
+                                            $420.00
+                                        </div>
+                                        <div class="product__cart">
+                                            <i class="fa-solid fa-cart-plus product__cart-icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__like">
+                                        <i class="fa-solid fa-check like__icon-check"></i>
+                                        LIKE
+                                    </div>
+                                    <div class="product__sale">
+                                        <div class="product__percent">34%</div>
+                                        <p class="product__sale-text">SALE</p>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="l-2-4">
+                                <div class="product__item">
+                                    <img src="./assets/img/project_img/Hp2.jpg" alt="">
+                                    <div class="product__item-desc">
+                                        <div class="product__icon-list">
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                        </div>
+                                        <div class="product__item-name">
+                                            Dummy Product Model 20
+                                        </div>
+                                        <div class="product__item-price">
+                                            $420.00
+                                        </div>
+                                        <div class="product__cart">
+                                            <i class="fa-solid fa-cart-plus product__cart-icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__like">
+                                        <i class="fa-solid fa-check like__icon-check"></i>
+                                        LIKE
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="l-2-4">
+                                <div class="product__item">
+                                    <img src="./assets/img/project_img/Hp3.jpg" alt="">
+                                    <div class="product__item-desc">
+                                        <div class="product__icon-list">
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                        </div>
+                                        <div class="product__item-name">
+                                            Dummy Product Model 20
+                                        </div>
+                                        <div class="product__item-price">
+                                            $420.00
+                                        </div>
+                                        <div class="product__cart">
+                                            <i class="fa-solid fa-cart-plus product__cart-icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__like">
+                                        <i class="fa-solid fa-check like__icon-check"></i>
+                                        LIKE
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="l-2-4">
+                                <div class="product__item">
+                                    <img src="./assets/img/project_img/Hp4.jpg" alt="">
+                                    <div class="product__item-desc">
+                                        <div class="product__icon-list">
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                        </div>
+                                        <div class="product__item-name">
+                                            Dummy Product Model 20
+                                        </div>
+                                        <div class="product__item-price">
+                                            $420.00
+                                        </div>
+                                        <div class="product__cart">
+                                            <i class="fa-solid fa-cart-plus product__cart-icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__like">
+                                        <i class="fa-solid fa-check like__icon-check"></i>
+                                        LIKE
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="l-2-4">
+                                <div class="product__item">
+                                    <img src="./assets/img/project_img/Hp5.jpg" alt="">
+                                    <div class="product__item-desc">
+                                        <div class="product__icon-list">
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                        </div>
+                                        <div class="product__item-name">
+                                            Dummy Product Model 20
+                                        </div>
+                                        <div class="product__item-price">
+                                            $420.00
+                                        </div>
+                                        <div class="product__cart">
+                                            <i class="fa-solid fa-cart-plus product__cart-icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__like">
+                                        <i class="fa-solid fa-check like__icon-check"></i>
+                                        LIKE
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row " >
+                            <div class="l-2-4">
+                                <div class="product__item">
+                                    <img src="./assets/img/project_img/Hp6.jpg" alt="">
+                                    <div class="product__item-desc">
+                                        <div class="product__icon-list">
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                        </div>
+                                        <div class="product__item-name">
+                                            Dummy Product Model 20
+                                        </div>
+                                        <div class="product__item-price">
+                                            $420.00
+                                        </div>
+                                        <div class="product__cart">
+                                            <i class="fa-solid fa-cart-plus product__cart-icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__like">
+                                        <i class="fa-solid fa-check like__icon-check"></i>
+                                        LIKE
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="l-2-4">
+                                <div class="product__item">
+                                    <img src="./assets/img/project_img/Hp7.jpg" alt="">
+                                    <div class="product__item-desc">
+                                        <div class="product__icon-list">
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                        </div>
+                                        <div class="product__item-name">
+                                            Dummy Product Model 20
+                                        </div>
+                                        <div class="product__item-price">
+                                            $420.00
+                                        </div>
+                                        <div class="product__cart">
+                                            <i class="fa-solid fa-cart-plus product__cart-icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__like">
+                                        <i class="fa-solid fa-check like__icon-check"></i>
+                                        LIKE
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="l-2-4">
+                                <div class="product__item">
+                                    <img src="./assets/img/project_img/Hp8.jpg" alt="">
+                                    <div class="product__item-desc">
+                                        <div class="product__icon-list">
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                        </div>
+                                        <div class="product__item-name">
+                                            Dummy Product Model 20
+                                        </div>
+                                        <div class="product__item-price">
+                                            $420.00
+                                        </div>
+                                        <div class="product__cart">
+                                            <i class="fa-solid fa-cart-plus product__cart-icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__like">
+                                        <i class="fa-solid fa-check like__icon-check"></i>
+                                        LIKE
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="l-2-4">
+                                <div class="product__item">
+                                    <img src="./assets/img/project_img/Hp10.jpg" alt="">
+                                    <div class="product__item-desc">
+                                        <div class="product__icon-list">
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                        </div>
+                                        <div class="product__item-name">
+                                            Dummy Product Model 20
+                                        </div>
+                                        <div class="product__item-price">
+                                            $420.00
+                                        </div>
+                                        <div class="product__cart">
+                                            <i class="fa-solid fa-cart-plus product__cart-icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__like">
+                                        <i class="fa-solid fa-check like__icon-check"></i>
+                                        LIKE
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="l-2-4">
+                                <div class="product__item">
+                                    <img src="./assets/img/project_img/Hp9.jpg" alt="">
+                                    <div class="product__item-desc">
+                                        <div class="product__icon-list">
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                        </div>
+                                        <div class="product__item-name">
+                                            Dummy Product Model 20
+                                        </div>
+                                        <div class="product__item-price">
+                                            $420.00
+                                        </div>
+                                        <div class="product__cart">
+                                            <i class="fa-solid fa-cart-plus product__cart-icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__like">
+                                        <i class="fa-solid fa-check like__icon-check"></i>
+                                        LIKE
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                    </div>
+
+                </div>
+                <div class="row product__content">
+                    <div class="l-2 product__name">
+                        <i class="fa-solid fa-gamepad product__name-icon"></i>
+                        <div class="product__name-text">Games <br>&<br> Consoles</div>
+                    </div>
+
+                    <div class="l-10 product-list">
+                        <div class="row  view__all ">
+                            <a href="#">View All</a>
+                            <i class="fa-solid fa-arrow-right-long view__all-icon"></i>
+                            
+                        </div>
+                       <div class="block__product">
+                        <div class="row " >
+                            <div class="l-2-4">
+                                <div class="product__item">
+                                    <img src="./assets/img/project_img/Hp9.jpg" alt="">
+                                    <div class="product__item-desc">
+                                        <div class="product__icon-list">
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                        </div>
+                                        <div class="product__item-name">
+                                            Dummy Product Model 20
+                                        </div>
+                                        <div class="product__item-price">
+                                            $420.00
+                                        </div>
+                                        <div class="product__cart">
+                                            <i class="fa-solid fa-cart-plus product__cart-icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__like">
+                                        <i class="fa-solid fa-check like__icon-check"></i>
+                                        LIKE
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="l-2-4">
+                                <div class="product__item">
+                                    <img src="./assets/img/project_img/Hp9.jpg" alt="">
+                                    <div class="product__item-desc">
+                                        <div class="product__icon-list">
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                        </div>
+                                        <div class="product__item-name">
+                                            Dummy Product Model 20
+                                        </div>
+                                        <div class="product__item-price">
+                                            $420.00
+                                        </div>
+                                        <div class="product__cart">
+                                            <i class="fa-solid fa-cart-plus product__cart-icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__like">
+                                        <i class="fa-solid fa-check like__icon-check"></i>
+                                        LIKE
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="l-2-4">
+                                <div class="product__item">
+                                    <img src="./assets/img/project_img/Hp9.jpg" alt="">
+                                    <div class="product__item-desc">
+                                        <div class="product__icon-list">
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                        </div>
+                                        <div class="product__item-name">
+                                            Dummy Product Model 20
+                                        </div>
+                                        <div class="product__item-price">
+                                            $420.00
+                                        </div>
+                                        <div class="product__cart">
+                                            <i class="fa-solid fa-cart-plus product__cart-icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__like">
+                                        <i class="fa-solid fa-check like__icon-check"></i>
+                                        LIKE
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="l-2-4">
+                                <div class="product__item">
+                                    <img src="./assets/img/project_img/Hp9.jpg" alt="">
+                                    <div class="product__item-desc">
+                                        <div class="product__icon-list">
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                        </div>
+                                        <div class="product__item-name">
+                                            Dummy Product Model 20
+                                        </div>
+                                        <div class="product__item-price">
+                                            $420.00
+                                        </div>
+                                        <div class="product__cart">
+                                            <i class="fa-solid fa-cart-plus product__cart-icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__like">
+                                        <i class="fa-solid fa-check like__icon-check"></i>
+                                        LIKE
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="l-2-4">
+                                <div class="product__item">
+                                    <img src="./assets/img/project_img/Hp9.jpg" alt="">
+                                    <div class="product__item-desc">
+                                        <div class="product__icon-list">
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                        </div>
+                                        <div class="product__item-name">
+                                            Dummy Product Model 20
+                                        </div>
+                                        <div class="product__item-price">
+                                            $420.00
+                                        </div>
+                                        <div class="product__cart">
+                                            <i class="fa-solid fa-cart-plus product__cart-icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__like">
+                                        <i class="fa-solid fa-check like__icon-check"></i>
+                                        LIKE
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row " >
+                            <div class="l-2-4">
+                                <div class="product__item">
+                                    <img src="./assets/img/project_img/Hp9.jpg" alt="">
+                                    <div class="product__item-desc">
+                                        <div class="product__icon-list">
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                        </div>
+                                        <div class="product__item-name">
+                                            Dummy Product Model 20
+                                        </div>
+                                        <div class="product__item-price">
+                                            $420.00
+                                        </div>
+                                        <div class="product__cart">
+                                            <i class="fa-solid fa-cart-plus product__cart-icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__like">
+                                        <i class="fa-solid fa-check like__icon-check"></i>
+                                        LIKE
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="l-2-4">
+                                <div class="product__item">
+                                    <img src="./assets/img/project_img/Hp9.jpg" alt="">
+                                    <div class="product__item-desc">
+                                        <div class="product__icon-list">
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                        </div>
+                                        <div class="product__item-name">
+                                            Dummy Product Model 20
+                                        </div>
+                                        <div class="product__item-price">
+                                            $420.00
+                                        </div>
+                                        <div class="product__cart">
+                                            <i class="fa-solid fa-cart-plus product__cart-icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__like">
+                                        <i class="fa-solid fa-check like__icon-check"></i>
+                                        LIKE
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="l-2-4">
+                                <div class="product__item">
+                                    <img src="./assets/img/project_img/Hp9.jpg" alt="">
+                                    <div class="product__item-desc">
+                                        <div class="product__icon-list">
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                        </div>
+                                        <div class="product__item-name">
+                                            Dummy Product Model 20
+                                        </div>
+                                        <div class="product__item-price">
+                                            $420.00
+                                        </div>
+                                        <div class="product__cart">
+                                            <i class="fa-solid fa-cart-plus product__cart-icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__like">
+                                        <i class="fa-solid fa-check like__icon-check"></i>
+                                        LIKE
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="l-2-4">
+                                <div class="product__item">
+                                    <img src="./assets/img/project_img/Hp9.jpg" alt="">
+                                    <div class="product__item-desc">
+                                        <div class="product__icon-list">
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                        </div>
+                                        <div class="product__item-name">
+                                            Dummy Product Model 20
+                                        </div>
+                                        <div class="product__item-price">
+                                            $420.00
+                                        </div>
+                                        <div class="product__cart">
+                                            <i class="fa-solid fa-cart-plus product__cart-icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__like">
+                                        <i class="fa-solid fa-check like__icon-check"></i>
+                                        LIKE
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="l-2-4">
+                                <div class="product__item">
+                                    <img src="./assets/img/project_img/Hp9.jpg" alt="">
+                                    <div class="product__item-desc">
+                                        <div class="product__icon-list">
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                        </div>
+                                        <div class="product__item-name">
+                                            Dummy Product Model 20
+                                        </div>
+                                        <div class="product__item-price">
+                                            $420.00
+                                        </div>
+                                        <div class="product__cart">
+                                            <i class="fa-solid fa-cart-plus product__cart-icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__like">
+                                        <i class="fa-solid fa-check like__icon-check"></i>
+                                        LIKE
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                    </div>
+
+                </div>
+                <div class="row product__content">
+                    <div class="l-2 product__name">
+                        <i class="fa-solid fa-display product__name-icon"></i>
+                        <div class="product__name-text">Computer<br>&<br>Television</div>
+                    </div>
+
+                    <div class="l-10 product-list">
+                        <div class="row  view__all ">
+                            <a href="#">View All</a>
+                            <i class="fa-solid fa-arrow-right-long view__all-icon"></i>
+                            
+                        </div>
+                       <div class="block__product">
+                        <div class="row " >
+                            <div class="l-2-4">
+                                <div class="product__item">
+                                    <img src="./assets/img/project_img/Hp9.jpg" alt="">
+                                    <div class="product__item-desc">
+                                        <div class="product__icon-list">
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                        </div>
+                                        <div class="product__item-name">
+                                            Dummy Product Model 20
+                                        </div>
+                                        <div class="product__item-price">
+                                            $420.00
+                                        </div>
+                                        <div class="product__cart">
+                                            <i class="fa-solid fa-cart-plus product__cart-icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__like">
+                                        <i class="fa-solid fa-check like__icon-check"></i>
+                                        LIKE
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="l-2-4">
+                                <div class="product__item">
+                                    <img src="./assets/img/project_img/Hp9.jpg" alt="">
+                                    <div class="product__item-desc">
+                                        <div class="product__icon-list">
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                        </div>
+                                        <div class="product__item-name">
+                                            Dummy Product Model 20
+                                        </div>
+                                        <div class="product__item-price">
+                                            $420.00
+                                        </div>
+                                        <div class="product__cart">
+                                            <i class="fa-solid fa-cart-plus product__cart-icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__like">
+                                        <i class="fa-solid fa-check like__icon-check"></i>
+                                        LIKE
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="l-2-4">
+                                <div class="product__item">
+                                    <img src="./assets/img/project_img/Hp9.jpg" alt="">
+                                    <div class="product__item-desc">
+                                        <div class="product__icon-list">
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                        </div>
+                                        <div class="product__item-name">
+                                            Dummy Product Model 20
+                                        </div>
+                                        <div class="product__item-price">
+                                            $420.00
+                                        </div>
+                                        <div class="product__cart">
+                                            <i class="fa-solid fa-cart-plus product__cart-icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__like">
+                                        <i class="fa-solid fa-check like__icon-check"></i>
+                                        LIKE
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="l-2-4">
+                                <div class="product__item">
+                                    <img src="./assets/img/project_img/Hp9.jpg" alt="">
+                                    <div class="product__item-desc">
+                                        <div class="product__icon-list">
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                        </div>
+                                        <div class="product__item-name">
+                                            Dummy Product Model 20
+                                        </div>
+                                        <div class="product__item-price">
+                                            $420.00
+                                        </div>
+                                        <div class="product__cart">
+                                            <i class="fa-solid fa-cart-plus product__cart-icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__like">
+                                        <i class="fa-solid fa-check like__icon-check"></i>
+                                        LIKE
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="l-2-4">
+                                <div class="product__item">
+                                    <img src="./assets/img/project_img/Hp9.jpg" alt="">
+                                    <div class="product__item-desc">
+                                        <div class="product__icon-list">
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                        </div>
+                                        <div class="product__item-name">
+                                            Dummy Product Model 20
+                                        </div>
+                                        <div class="product__item-price">
+                                            $420.00
+                                        </div>
+                                        <div class="product__cart">
+                                            <i class="fa-solid fa-cart-plus product__cart-icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__like">
+                                        <i class="fa-solid fa-check like__icon-check"></i>
+                                        LIKE
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row " >
+                            <div class="l-2-4">
+                                <div class="product__item">
+                                    <img src="./assets/img/project_img/Hp9.jpg" alt="">
+                                    <div class="product__item-desc">
+                                        <div class="product__icon-list">
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                        </div>
+                                        <div class="product__item-name">
+                                            Dummy Product Model 20
+                                        </div>
+                                        <div class="product__item-price">
+                                            $420.00
+                                        </div>
+                                        <div class="product__cart">
+                                            <i class="fa-solid fa-cart-plus product__cart-icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__like">
+                                        <i class="fa-solid fa-check like__icon-check"></i>
+                                        LIKE
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="l-2-4">
+                                <div class="product__item">
+                                    <img src="./assets/img/project_img/Hp9.jpg" alt="">
+                                    <div class="product__item-desc">
+                                        <div class="product__icon-list">
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                        </div>
+                                        <div class="product__item-name">
+                                            Dummy Product Model 20
+                                        </div>
+                                        <div class="product__item-price">
+                                            $420.00
+                                        </div>
+                                        <div class="product__cart">
+                                            <i class="fa-solid fa-cart-plus product__cart-icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__like">
+                                        <i class="fa-solid fa-check like__icon-check"></i>
+                                        LIKE
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="l-2-4">
+                                <div class="product__item">
+                                    <img src="./assets/img/project_img/Hp9.jpg" alt="">
+                                    <div class="product__item-desc">
+                                        <div class="product__icon-list">
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                        </div>
+                                        <div class="product__item-name">
+                                            Dummy Product Model 20
+                                        </div>
+                                        <div class="product__item-price">
+                                            $420.00
+                                        </div>
+                                        <div class="product__cart">
+                                            <i class="fa-solid fa-cart-plus product__cart-icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__like">
+                                        <i class="fa-solid fa-check like__icon-check"></i>
+                                        LIKE
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="l-2-4">
+                                <div class="product__item">
+                                    <img src="./assets/img/project_img/Hp9.jpg" alt="">
+                                    <div class="product__item-desc">
+                                        <div class="product__icon-list">
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                        </div>
+                                        <div class="product__item-name">
+                                            Dummy Product Model 20
+                                        </div>
+                                        <div class="product__item-price">
+                                            $420.00
+                                        </div>
+                                        <div class="product__cart">
+                                            <i class="fa-solid fa-cart-plus product__cart-icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__like">
+                                        <i class="fa-solid fa-check like__icon-check"></i>
+                                        LIKE
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="l-2-4">
+                                <div class="product__item">
+                                    <img src="./assets/img/project_img/Hp9.jpg" alt="">
+                                    <div class="product__item-desc">
+                                        <div class="product__icon-list">
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                            <i class="fa-solid fa-star product__icon-ratting"></i>
+                                        </div>
+                                        <div class="product__item-name">
+                                            Dummy Product Model 20
+                                        </div>
+                                        <div class="product__item-price">
+                                            $420.00
+                                        </div>
+                                        <div class="product__cart">
+                                            <i class="fa-solid fa-cart-plus product__cart-icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__like">
+                                        <i class="fa-solid fa-check like__icon-check"></i>
+                                        LIKE
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="footer">
+            <!-- <svg viewBox="0 0 1920 187" preserveAspectRatio="none" class="trust-background-1"><polygon points="1920,187 0,187 0,181 82,172 458,31 778,110 1354,0 1920,182" class="c1"></polygon></svg> -->
+            <!-- <svg viewBox="0 0 1920 187" preserveAspectRatio="none" class="trust-background-2"><path d="M0 0h1920v64l-238-20-448 143L396 45 0 103z" class="c1"></path></svg> -->
+            <!-- #33a474 -->
+        </footer>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
