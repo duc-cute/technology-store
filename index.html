@@ -53,10 +53,10 @@
                         <div class="header__search-input-wrap">
                             <input type="text" class="header__search-input" placeholder="I'm searching for..." required>
                         </div>
-                        <div class="header__search-selection">
+                        <div class="header__search-selection header__search-selection-js">
                             <span class="header__search-option">
-                                <p class="text__search-js">All Categories</p>
-                                <ul class="header__category header__category-js">
+                                <p>All Categories</p>
+                                <ul class="header__category category__menu-js">
                                     <li class="header__category-item">
                                         <i class="fa-solid fa-caret-right category-item-icon"></i>
                                         All Categories
@@ -83,7 +83,7 @@
                                     </li>
                                 </ul>
                             </span>
-                            <i class="fa-solid fa-caret-down search__icon-down btn__search-js"></i>
+                            <i class="fa-solid fa-caret-down search__icon-down"></i>
                         </div>
                         <button class="header__search-btn">
                             <i class="fa-solid fa-magnifying-glass header__search-btn-icon"></i>
@@ -111,9 +111,7 @@
                         <li class="menu__list-item"><a href="">Tech Discovery</a></li>
                         <li class="menu__list-item"><a href="">Trending Styles</a></li>
                         <li class="menu__list-item"><a href="">Gift Cards</a></li>
-                        
                     </ul>
-                    
                 </div>
             </div>
         </header>
@@ -1157,22 +1155,22 @@
                 <div class="row list-counter">
                     <div class="l-3 counter-item ">
                         <img src="./assets/icon/icon1.png" alt="">
-                        <h2 class="number">30470</h2>
+                        <h2 class="number">45000</h2>
                         <p>Posts</p>
                     </div>
                     <div class="l-3 counter-item ">
                         <img src="./assets/icon/icon2.png" alt="">
-                        <h2 class="number">10040</h2>
+                        <h2 class="number">28000</h2>
                         <p>Followers</p>
                     </div>
                     <div class="l-3 counter-item ">
                         <img src="./assets/icon/icon3.png" alt="">
-                        <h2 class="number">107652</h2>
+                        <h2 class="number">150000</h2>
                         <p>Orders</p>
                     </div>
                     <div class="l-3 counter-item ">
                         <img src="./assets/icon/icon4.png" alt="">
-                        <h2 class="number">12700</h2>
+                        <h2 class="number">12000</h2>
                         <p>Followers</p>
                     </div>
                </div>
@@ -1264,15 +1262,85 @@
                 </div>
             </div>
 
-            <div class="img-saw">
+            <!-- <div class="img-saw">
                 <svg viewBox="0 0 1920 187" preserveAspectRatio="none" class="trust-background-2"><path fill="#33a474" d="M0 0h1920v64l-238-20-448 143L396 45 0 103z" class="c1"></path></svg>
 
-            </div>
-
+            </div> -->
 
         </div>
 
         <footer class="footer">
+            <div class="footer__sign-up">
+                <div class="footer__invite-sign">
+                    <h1 class="footer__invite-heading">
+                        Subscribe Us to join our <br>Community
+                    </h1>
+                    <p class="footer__invite-desc">
+                        Get e-mail updates about our latest shop and special offers.
+                    </p>
+                </div>
+                <div class="footer__input-form">
+                      <input type="email" name="" id="footer__invite-email" placeholder="Enter your email...">
+                      <button type="submit" class="footer__invite-btn">
+                        <i class="fa-brands fa-telegram footer__invite-icon"></i>
+                      </button>
+                </div>                    
+            </div>
+
+            <div class="grid wide footer__info">
+                <div class="row">
+                    <ul class="l-3 list__services">
+                        <h2 class="services__heading">Customer Services</h2>
+                        <li class="item-service"><i class="fa-solid fa-angles-right icon__service-footer"></i><a href="">My Account</a></li>
+                        <li class="item-service"><i class="fa-solid fa-angles-right icon__service-footer"></i><a href="">Order History</a></li>
+                        <li class="item-service"><i class="fa-solid fa-angles-right icon__service-footer"></i><a href="">Returns</a></li>
+                        <li class="item-service"><i class="fa-solid fa-angles-right icon__service-footer"></i><a href="">Privacy Policy</a></li>
+                        <li class="item-service"><i class="fa-solid fa-angles-right icon__service-footer"></i><a href="">Specials</a></li>
+                    </ul>
+                    <ul class="l-3 list__services">
+                        <h2 class="services__heading">Infomation</h2>
+                        <li class="item-service"><i class="fa-solid fa-angles-right icon__service-footer"></i><a href="">About Us</a></li>
+                        <li class="item-service"><i class="fa-solid fa-angles-right icon__service-footer"></i><a href="">Blog</a></li>
+                        <li class="item-service"><i class="fa-solid fa-angles-right icon__service-footer"></i><a href="">Terms of Use</a></li>
+                        <li class="item-service"><i class="fa-solid fa-angles-right icon__service-footer"></i><a href="">Privacy Policy</a></li>
+                        <li class="item-service"><i class="fa-solid fa-angles-right icon__service-footer"></i><a href="">Site Map</a></li>
+                    </ul>
+                    <ul class="l-3 list__services">
+                        <h2 class="services__heading">About store</h2>
+                        <li class="item-service"><i class="fa-solid fa-location-dot icon__service-info"></i>Address:<a href=""> Van Giang,HungYen, VietNam.</a></li>
+                        <li class="item-service"><i class="fa-solid fa-envelope icon__service-info"></i>Mail us:<a href="mailto:duc20035555@gmail.com"> duc20035555@gmail.com</a></li>
+                        <li class="item-service"><i class="fa-solid fa-phone icon__service-info"></i>Phone:<a href="tel:+0888804085"> 0888804085</a></li>
+                    </ul>
+                    <ul class="l-3 list__services">
+                        <h2 class="services__heading">HELP & SUPPORT</h2>
+                        <li class="item-service"><i class="fa-solid fa-angles-right icon__service-footer"></i><a href="">Product Support</a></li>
+                        <li class="item-service"><i class="fa-solid fa-angles-right icon__service-footer"></i><a href="">Support Services</a></li>
+                        <li class="item-service"><i class="fa-solid fa-angles-right icon__service-footer"></i><a href="">Community</a></li>
+                    </ul>
+                </div>
+                <div class="list__socia">
+                    <div class="button__socia">
+                        <a class="icon-socia"><i class="fa-brands fa-facebook-f"></i></a>
+                        <span>Facebook</span>
+                    </div>
+                    <div class="button__socia">
+                        <a class="icon-socia"><i class="fa-brands fa-twitter"></i></a>
+                        <span>Twitter</span>
+                    </div>
+                    <div class="button__socia">
+                        <a class="icon-socia"><i class="fa-brands fa-instagram"></i></a>
+                        <span>Instagram</span>
+                    </div>
+                    <div class="button__socia">
+                        <a class="icon-socia"><i class="fa-brands fa-youtube"></i></a>
+                        <span>Youtube</span>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="design__by-duccute">
+                @2022.Design by Duccute
+            </div>
          
         </footer>
 

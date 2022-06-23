@@ -1,19 +1,17 @@
 //Open category
-var categoryListIcon=document.querySelector('.btn__search-js');
-var categoryListText=document.querySelector('.text__search-js');
-var headerModel=document.querySelector('.header__category-js');
+var categoryOtion=document.querySelector('.header__search-selection-js');
+var menuCategory=document.querySelector('.category__menu-js');
 
-var isContain=headerModel.classList.contains('open');
+    categoryOtion.addEventListener('click',function() {
+         let isContain=menuCategory.classList.contains('open');
+            if(isContain) {
+                menuCategory.classList.remove('open');
+            }else {
+                menuCategory.classList.add('open');
+                // menuCategory.style.animation=`growUp .3s linear`
+            }
+    })
 
-    if(isContain==true) {
-        categoryListIcon.addEventListener('click',function() {
-            headerModel.classList.remove('open');
-        });
-    }else if(isContain==false) {
-        categoryListIcon.addEventListener('click',function() {
-            headerModel.classList.add('open');
-            });
-    }
 //Slider
     var slideIndex=1;
     showSlides(slideIndex);
@@ -45,7 +43,7 @@ function counter(el) {
     var numberEL=el.querySelector('.number');
     var to=parseInt(numberEL.innerText);
     var count=0;
-    const time=500;
+    const time=200;
     var step=Math.floor(to/time);
     var counting=setInterval(function() {
         count+=step;
@@ -68,7 +66,9 @@ const objectsever=new IntersectionObserver(entries =>{
    })
 })
 listCounter.forEach(item =>{
-    objectsever.observe(item);
+    setTimeout(function() {
+        objectsever.observe(item);
+    },1000);
 
 })
     
