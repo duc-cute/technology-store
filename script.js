@@ -13,11 +13,7 @@ var menuCategory=document.querySelector('.category__menu-js');
     })
 
 //Slider
-    var slideIndex=1;
-    showSlides(slideIndex);
-    function currentSlide(n) {
-        showSlides(slideIndex=n);
-    }
+var slideIndex=1;
     function showSlides(n) {
         var i;
         var slides=document.querySelectorAll('.myslides');
@@ -36,6 +32,10 @@ var menuCategory=document.querySelector('.category__menu-js');
         }
         slides[slideIndex-1].style.display='block';
         dots[slideIndex-1].className += ' active';
+    }
+    showSlides(slideIndex);
+    function currentSlide(n) {
+        showSlides(slideIndex=n);
     }
 // Counter Up
 var listCounter=document.querySelectorAll('.counter-item')
@@ -71,6 +71,61 @@ listCounter.forEach(item =>{
     },1000);
 
 })
+// Model Sign-Up
+var btnLoginModel=document.querySelector('.header__navbar-login-js');
+var btnsCloseModel=document.querySelectorAll('.model-close-btn-js')
+
+var btnSignUpModelReturn=document.querySelector('.btn-sign-up-js');
+var btnLoginModelReturn=document.querySelector('.btn-login-return-js');
+
+var modelLogin=document.querySelector('.login-model-js');
+var modelSignUp=document.querySelector('.sign-up-model-js');
+
+var modelAccout=document.querySelector('.model__account-js');
+var modelBody=document.querySelector('.model-body-js');
+
+
+// var modelSecond=d
+function hideLogin() {
+    modelAccout.classList.remove('open'); 
+}
+function showLogin() {
+    modelAccout.classList.add('open');
+    modelSignUp.style.display='none';
+    modelLogin.style.display='block';   
+}
+function showSignUp() {
+    modelLogin.style.display='none';
+    modelSignUp.style.display='block';
+}
+
+//Show and Hide Login
+btnLoginModel.addEventListener('click',showLogin);
+btnLoginModelReturn.addEventListener('click',showLogin);
+
+//Show and Hide SignUp
+btnSignUpModelReturn.addEventListener('click',showSignUp);
+
+//Event
+for(var i=0;i<btnsCloseModel.length;i++) {
+    btnsCloseModel[i].addEventListener('click',hideLogin);
+}
+modelAccout.addEventListener('click',hideLogin);
+
+modelLogin.addEventListener('click',function(e) {
+    e.stopPropagation();
+})
+
+modelSignUp.addEventListener('click',function(e) {
+    e.stopPropagation();
+})
+
+
+
+
+
+
+
     
     
 
