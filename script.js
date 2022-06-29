@@ -43,7 +43,7 @@ function counter(el) {
     var numberEL=el.querySelector('.number');
     var to=parseInt(numberEL.innerText);
     var count=0;
-    const time=200;
+    const time=1000;
     var step=Math.floor(to/time);
     var counting=setInterval(function() {
         count+=step;
@@ -68,7 +68,7 @@ const objectsever=new IntersectionObserver(entries =>{
 listCounter.forEach(item =>{
     setTimeout(function() {
         objectsever.observe(item);
-    },1000);
+    },2000);
 
 })
 // Model Sign-Up
@@ -85,7 +85,6 @@ var modelAccout=document.querySelector('.model__account-js');
 var modelBody=document.querySelector('.model-body-js');
 
 
-// var modelSecond=d
 function hideLogin() {
     modelAccout.classList.remove('open'); 
 }
@@ -119,7 +118,31 @@ modelLogin.addEventListener('click',function(e) {
 modelSignUp.addEventListener('click',function(e) {
     e.stopPropagation();
 })
+//Cart empty 
+var cartList=document.querySelector('.cart__list-js');
+var cartListBtn=document.querySelector('.cart__list-btn');
+cartListBtn.addEventListener('click',function() {
+    var isContain=cartList.classList.contains('open');
+    if(isContain) {
+        cartList.classList.remove('open');
 
+    }else {
+        cartList.classList.add('open');
+
+    }
+})
+//Menu Tablet
+var menuHeaderTablet=document.querySelector('.header__menu-icon-js');
+var headerSubMenu=document.querySelector('.header__list-menu-tablet');
+menuHeaderTablet.addEventListener('click',function() {
+    var isContain=headerSubMenu.classList.contains('open');
+    if(isContain) {
+        headerSubMenu.classList.remove('open');
+    }else {
+        headerSubMenu.classList.add('open');
+
+    }
+})
 
 
 

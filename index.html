@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shoppe</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     <div class="main">
@@ -20,11 +22,11 @@
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item item-separate ">
                             <i class="fa-solid fa-phone icon__header-phone"></i>
-                            <p class="text__header-phone hover__effect">Call us free: <a href="tel:000-986-388-000">000-986-388-000</a></p>
+                            <p class="text__header-phone hover__effect">Call us free: <a href="tel:0888-804-085">0888-804-085</a></p>
                         </li>
                         <li class="header__navbar-item ">
                             <i class="fa-solid fa-envelope icon__header-mail"></i>
-                            <p class="text__header-mail hover__effect">Email: <a href="mailto:duc150120035555@gmai.com" class="hover-effect">sales@yoursite.com</a></p>
+                            <p class="text__header-mail hover__effect">Email: <a href="mailto:duc150120035555@gmai.com" class="hover-effect">duc150120035555@gmai.com</a></p>
                         </li>
                     </ul>
                     <ul class="header__navbar-list ">
@@ -98,50 +100,122 @@
                         <i class="fa-brands fa-asymmetrik header__logo-icon"></i>
                         <a href="#"><p class="header__logo-text">Dev-House</p></a>
                     </div>
-                    <div class="header__search">
-                        <div class="header__search-input-wrap">
-                            <input type="text" class="header__search-input" placeholder="I'm searching for..." required>
+                    <div class="row no-gutters header__tool mr-8">
+                        <div class="col  header__search mr-24">
+                            <div class="header__search-input-wrap">
+                                <input type="text" class="header__search-input" placeholder="I'm searching for..." required>
+                            </div>
+                            <div class="header__search-selection header__search-selection-js">
+                                <span class="header__search-option">
+                                    <p>All Categories</p>
+                                    <ul class="header__category category__menu-js">
+                                        <li class="header__category-item">
+                                            <i class="fa-solid fa-caret-right category-item-icon"></i>
+                                            All Categories
+                                        </li>
+                                        <li class="header__category-item">
+                                            <i class="fa-solid fa-caret-right category-item-icon"></i>
+                                            Bluetooth & Wireless Speakers
+                                        </li>
+                                        <li class="header__category-item">
+                                            <i class="fa-solid fa-caret-right category-item-icon"></i>
+                                            Camera, Photo & Video
+                                        </li>
+                                        <li class="header__category-item">
+                                            <i class="fa-solid fa-caret-right category-item-icon"></i>
+                                            Computers & Tablets
+                                        </li>
+                                        <li class="header__category-item">
+                                            <i class="fa-solid fa-caret-right category-item-icon"></i>
+                                            Headphone
+                                        </li>
+                                        <li class="header__category-item">
+                                            <i class="fa-solid fa-caret-right category-item-icon"></i>
+                                            Video games
+                                        </li>
+                                    </ul>
+                                </span>
+                                <i class="fa-solid fa-caret-down search__icon-down"></i>
+                            </div>
+                            <button class="header__search-btn">
+                                <i class="fa-solid fa-magnifying-glass header__search-btn-icon"></i>
+                            </button>
                         </div>
-                        <div class="header__search-selection header__search-selection-js">
-                            <span class="header__search-option">
-                                <p>All Categories</p>
-                                <ul class="header__category category__menu-js">
-                                    <li class="header__category-item">
-                                        <i class="fa-solid fa-caret-right category-item-icon"></i>
-                                        All Categories
-                                    </li>
-                                    <li class="header__category-item">
-                                        <i class="fa-solid fa-caret-right category-item-icon"></i>
-                                        Bluetooth & Wireless Speakers
-                                    </li>
-                                    <li class="header__category-item">
-                                        <i class="fa-solid fa-caret-right category-item-icon"></i>
-                                        Camera, Photo & Video
-                                    </li>
-                                    <li class="header__category-item">
-                                        <i class="fa-solid fa-caret-right category-item-icon"></i>
-                                        Computers & Tablets
-                                    </li>
-                                    <li class="header__category-item">
-                                        <i class="fa-solid fa-caret-right category-item-icon"></i>
-                                        Headphone
-                                    </li>
-                                    <li class="header__category-item">
-                                        <i class="fa-solid fa-caret-right category-item-icon"></i>
-                                        Video games
-                                    </li>
-                                </ul>
-                            </span>
-                            <i class="fa-solid fa-caret-down search__icon-down"></i>
+                        <div class="col  header__cart">
+                            <i class="fa-solid fa-cart-shopping cart__list-btn">
+                                <div class="cart__list cart__list-js">
+                                    <!-- Cart Empty -->
+                                    <!-- <div class="cart__empty">
+                                        <img src="./assets/img/no_cart.png" alt="" class="cart__empty-img">
+                                        <p class="cart__empty-text">No products in the cart</p>
+                                    </div> -->
+                                    <!-- Cart Product  -->
+                                    <div class="cart__list-product"> 
+                                        <div class="header__cart-header"><h3>Sản phẩm đã thêm</h3></div>
+                                        <ul class="list__product-added">
+                                            <li class="cart-item">
+                                              <a href="" class="cart-item-link">
+                                                <div class="cart__img-product">
+                                                    <img src="./assets/img/project_img/Hp8.jpg" alt="">
+                                                </div>
+                                                <span class="cart__name-product">Sản phẩm HeadPhone chính hãng được sản xuất bới Dev-House</span>
+    
+                                                <div class="cart__desc-price">
+                                                    <span class="cart__price-product">2.070.000</span>
+                                                    <span class="cart__price-quantity">x1</span>
+                                                  </div>
+                                              </a>
+                                             
+                                              <div class="cart__desc-info">
+                                                <span class="cart__info-product">Mô tả sản phẩm HeadPhone.</span>
+                                                <button class="cart__btn-remove">Xóa</button>
+                                              </div>
+                                            </li>
+                                            <li class="cart-item">
+                                                <a href="" class="cart-item-link">
+                                                  <div class="cart__img-product">
+                                                      <img src="./assets/img/project_img/Hp8.jpg" alt="">
+                                                  </div>
+                                                  <span class="cart__name-product">Sản phẩm HeadPhone chính hãng được sản xuất bới Dev-House</span>
+      
+                                                  <div class="cart__desc-price">
+                                                      <span class="cart__price-product">2.070.000</span>
+                                                      <span class="cart__price-quantity">x1</span>
+                                                    </div>
+                                                </a>
+                                               
+                                                <div class="cart__desc-info">
+                                                  <span class="cart__info-product">Mô tả sản phẩm HeadPhone.</span>
+                                                  <button class="cart__btn-remove">Xóa</button>
+                                                </div>
+                                            </li>
+                                            <li class="cart-item">
+                                                <a href="" class="cart-item-link">
+                                                  <div class="cart__img-product">
+                                                      <img src="./assets/img/project_img/Hp8.jpg" alt="">
+                                                  </div>
+                                                  <span class="cart__name-product">Sản phẩm HeadPhone chính hãng được sản xuất bới Dev-House</span>
+      
+                                                  <div class="cart__desc-price">
+                                                      <span class="cart__price-product">2.070.000</span>
+                                                      <span class="cart__price-quantity">x1</span>
+                                                    </div>
+                                                </a>
+                                               
+                                                <div class="cart__desc-info">
+                                                  <span class="cart__info-product">Mô tả sản phẩm HeadPhone.</span>
+                                                  <button class="cart__btn-remove">Xóa</button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <a class="header__cart-viewall"><span>Xem giỏ hàng</span></a>
+                                    </div>  
+    
+                                </div>
+                            </i>
+                            <div class="number-items">4</div>
+                            <p class="price-text">Cart:<h3 class="prices-number"> $0.00</h3></p>
                         </div>
-                        <button class="header__search-btn">
-                            <i class="fa-solid fa-magnifying-glass header__search-btn-icon"></i>
-                        </button>
-                    </div>
-                    <div class="header__cart">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <div class="number-items">0</div>
-                        <p class="price-text">Cart:<h3 class="prices-number"> $0.00</h3></p>
                     </div>
                 </div>
             </div>
@@ -155,6 +229,92 @@
                     </ul>
                 </div>
                 <div class="header__menu-gradient">
+                    <div class="header__menu-tablet">
+                        <i class="fa-solid fa-bars header__menu-icon header__menu-icon-js">
+
+                            <ul class="header__list-menu-tablet">
+                                <li class="menu__list-item-tablet">
+                                    <i class="fa-solid fa-house"></i>
+                                    <a href="">Home</a>
+                                </li>
+                                <li class="menu__list-item-tablet item-separate">
+                                    <i class="fa-solid fa-store"></i>
+                                    <a href="">Shop</a>
+                                </li>
+                                <li class="menu__list-item-tablet item-separate">
+                                    <i class="fa-brands fa-asymmetrik"></i>
+                                    <a href="">Page</a>
+                                </li>
+                                <li class="menu__list-item-tablet item-separate">
+                                    <i class="fa-solid fa-blog"></i>
+                                    <a href="">Blog</a>
+                                </li>
+                                <li class="menu__list-item-tablet item-separate ">
+                                    <i class="fa-solid fa-bell notify__header-icon"></i>
+                                    <a href="" class="notify__header-text">Notify</a>
+                                    <div class="header__notify">
+                                        <div class="header__notify-header"><h3>Thông Báo Mới Nhận</h3></div>
+                                        <ul class="list__notify">
+                                            <li class="notify-item header__viewed">
+                                                <a href="" class="notify-item-link">
+                                                <div class="notify__img-product">
+                                                    <img src="./assets/img/project_img/Hp6.jpg" alt="">
+                                                </div>
+                                                <div class="notify__desc-product">
+                                                    <span class="notify__name-product">Sản phẩm HeadPhone chính hãng được sản xuất bới Dev-House</span>
+                                                    <span class="notify__info-product">Mô tả sản phẩm HeadPhone.</span>
+                                                </div>
+                                                </a>
+                                            </li>
+                                            <li class="notify-item header__viewed">
+                                                <a href="" class="notify-item-link">
+                                                    <div class="notify__img-product">
+                                                        <img src="./assets/img/project_img/Hp5.jpg" alt="">
+                                                    </div>
+                                                    <div class="notify__desc-product">
+                                                        <span class="notify__name-product">Sản phẩm HeadPhone chính hãng được sản xuất bới Dev-House</span>
+                                                        <span class="notify__info-product">Mô tả sản phẩm HeadPhone.</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="notify-item header__viewed">
+                                                <a href="" class="notify-item-link">
+                                                    <div class="notify__img-product">
+                                                        <img src="./assets/img/project_img/Hp8.jpg" alt="">
+                                                    </div>
+                                                    <div class="notify__desc-product">
+                                                        <span class="notify__name-product">Sản phẩm HeadPhone chính hãng được sản xuất bới Dev-House</span>
+                                                        <span class="notify__info-product">Mô tả sản phẩm HeadPhone.</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="notify-item ">
+                                                <a href="" class="notify-item-link">
+                                                <div class="notify__img-product">
+                                                    <img src="./assets/img/project_img/Hp10.jpg" alt="">
+                                                </div>
+                                                <div class="notify__desc-product">
+                                                    <span class="notify__name-product">Sản phẩm HeadPhone chính hãng được sản xuất bới Dev-House</span>
+                                                    <span class="notify__info-product">Mô tả sản phẩm HeadPhone.Mô tả sản phẩm HeadPhone.Mô tả sản phẩm HeadPhone.</span>
+                                                </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="header__notify-viewall">Xem tất cả</div>
+                                    </div>
+                                </li>
+                                <li class="menu__list-item-tablet item-separate ">
+                                    <i class="fa-solid fa-circle-question help__header-icon"></i>
+                                    <a href="" class="help__header-text ">Help</a>
+                                </li>
+                                <li class="menu__list-item-tablet header__navbar-login-js">
+                                    <i class="fa-solid fa-user user__header-icon "></i>
+                                    <a class="user__header-text " >Login/Sign up</a>
+                                </li>
+                            </ul>
+
+                        </i>
+                    </div>
                     <ul class="menu__list">
                         <li class="menu__list-item"><a href="">Flash Deals</a></li>
                         <li class="menu__list-item"><a href="">Tech Discovery</a></li>
@@ -164,6 +324,7 @@
                 </div>
             </div>
         </header>
+
         <div class="container">
             <!-- SliderShow -->
            <div class="container__slides">
@@ -195,13 +356,13 @@
 
            <!-- Products -->
             <div class="grid wide flag__position">
-                <div class="row product__content">
-                    <div class="l-2 product__name">
+                <div class="row no-gutters product__content">
+                    <div class="l-2 col product__name">
                         <i class="fa-solid fa-headphones-simple product__name-icon"></i>
                         <div class="product__name-text">Headphones</div>
                     </div>
 
-                    <div class="l-10 product-list">
+                    <div class="l-10 col product-list">
                         <div class="row  view__all ">
                             <a href="#">View All</a>
                             <i class="fa-solid fa-arrow-right-long view__all-icon"></i>
@@ -209,7 +370,7 @@
                         </div>
                         <div class="block__product">
                             <div class="row " >
-                                <div class="l-2-4">
+                                <div class="l-2-4 col">
                                     <div class="product__item">
                                         <img src="./assets/img/project_img/Hp1.jpg" alt="">
                                         <div class="product__item-desc">
@@ -245,7 +406,7 @@
 
                                     </div>
                                 </div>
-                                <div class="l-2-4">
+                                <div class="l-2-4 col">
                                     <div class="product__item">
                                         <img src="./assets/img/project_img/Hp2.jpg" alt="">
                                         <div class="product__item-desc">
@@ -276,7 +437,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="l-2-4">
+                                <div class="l-2-4 col">
                                     <div class="product__item">
                                         <img src="./assets/img/project_img/Hp3.jpg" alt="">
                                         <div class="product__item-desc">
@@ -307,7 +468,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="l-2-4">
+                                <div class="l-2-4 col">
                                     <div class="product__item">
                                         <img src="./assets/img/project_img/Hp4.jpg" alt="">
                                         <div class="product__item-desc">
@@ -338,7 +499,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="l-2-4">
+                                <div class="l-2-4 col">
                                     <div class="product__item">
                                         <img src="./assets/img/project_img/Hp5.jpg" alt="">
                                         <div class="product__item-desc">
@@ -371,7 +532,7 @@
                                 </div>
                             </div>
                             <div class="row " >
-                                <div class="l-2-4">
+                                <div class="l-2-4 col">
                                     <div class="product__item">
                                         <img src="./assets/img/project_img/Hp6.jpg" alt="">
                                         <div class="product__item-desc">
@@ -402,7 +563,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="l-2-4">
+                                <div class="l-2-4 col">
                                     <div class="product__item">
                                         <img src="./assets/img/project_img/Hp7.jpg" alt="">
                                         <div class="product__item-desc">
@@ -433,7 +594,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="l-2-4">
+                                <div class="l-2-4 col">
                                     <div class="product__item">
                                         <img src="./assets/img/project_img/Hp8.jpg" alt="">
                                         <div class="product__item-desc">
@@ -464,7 +625,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="l-2-4">
+                                <div class="l-2-4 col">
                                     <div class="product__item">
                                         <img src="./assets/img/project_img/Hp10.jpg" alt="">
                                         <div class="product__item-desc">
@@ -495,7 +656,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="l-2-4">
+                                <div class="l-2-4 col">
                                     <div class="product__item">
                                         <img src="./assets/img/project_img/Hp9.jpg" alt="">
                                         <div class="product__item-desc">
@@ -545,9 +706,9 @@
                         </div>
                         <div class="block__product">
                             <div class="row " >
-                                <div class="l-2-4">
+                                <div class="l-2-4 col">
                                     <div class="product__item">
-                                        <img src="./assets/img/project_img/Hp9.jpg" alt="">
+                                        <img src="./assets/img/project_img/Game1.jpg" alt="">
                                         <div class="product__item-desc">
                                             <div class="product__icon-list">
                                                 <i class="fa-solid fa-star product__icon-ratting"></i>
@@ -576,9 +737,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="l-2-4">
+                                <div class="l-2-4 col">
                                     <div class="product__item">
-                                        <img src="./assets/img/project_img/Hp9.jpg" alt="">
+                                        <img src="./assets/img/project_img/Game2.jpg" alt="">
                                         <div class="product__item-desc">
                                             <div class="product__icon-list">
                                                 <i class="fa-solid fa-star product__icon-ratting"></i>
@@ -607,9 +768,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="l-2-4">
+                                <div class="l-2-4 col">
                                     <div class="product__item">
-                                        <img src="./assets/img/project_img/Hp9.jpg" alt="">
+                                        <img src="./assets/img/project_img/Game3.jpg" alt="">
                                         <div class="product__item-desc">
                                             <div class="product__icon-list">
                                                 <i class="fa-solid fa-star product__icon-ratting"></i>
@@ -638,9 +799,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="l-2-4">
+                                <div class="l-2-4 col">
                                     <div class="product__item">
-                                        <img src="./assets/img/project_img/Hp9.jpg" alt="">
+                                        <img src="./assets/img/project_img/Game4.jpg" alt="">
                                         <div class="product__item-desc">
                                             <div class="product__icon-list">
                                                 <i class="fa-solid fa-star product__icon-ratting"></i>
@@ -669,9 +830,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="l-2-4">
+                                <div class="l-2-4 col">
                                     <div class="product__item">
-                                        <img src="./assets/img/project_img/Hp9.jpg" alt="">
+                                        <img src="./assets/img/project_img/Game5.jpg" alt="">
                                         <div class="product__item-desc">
                                             <div class="product__icon-list">
                                                 <i class="fa-solid fa-star product__icon-ratting"></i>
@@ -702,9 +863,9 @@
                                 </div>
                             </div>
                             <div class="row " >
-                                <div class="l-2-4">
+                                <div class="l-2-4 col">
                                     <div class="product__item">
-                                        <img src="./assets/img/project_img/Hp9.jpg" alt="">
+                                        <img src="./assets/img/project_img/Game6.jpg" alt="">
                                         <div class="product__item-desc">
                                             <div class="product__icon-list">
                                                 <i class="fa-solid fa-star product__icon-ratting"></i>
@@ -733,9 +894,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="l-2-4">
+                                <div class="l-2-4 col">
                                     <div class="product__item">
-                                        <img src="./assets/img/project_img/Hp9.jpg" alt="">
+                                        <img src="./assets/img/project_img/Game7.jpg" alt="">
                                         <div class="product__item-desc">
                                             <div class="product__icon-list">
                                                 <i class="fa-solid fa-star product__icon-ratting"></i>
@@ -764,9 +925,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="l-2-4">
+                                <div class="l-2-4 col">
                                     <div class="product__item">
-                                        <img src="./assets/img/project_img/Hp9.jpg" alt="">
+                                        <img src="./assets/img/project_img/Game8.jpg" alt="">
                                         <div class="product__item-desc">
                                             <div class="product__icon-list">
                                                 <i class="fa-solid fa-star product__icon-ratting"></i>
@@ -795,9 +956,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="l-2-4">
+                                <div class="l-2-4 col">
                                     <div class="product__item">
-                                        <img src="./assets/img/project_img/Hp9.jpg" alt="">
+                                        <img src="./assets/img/project_img/Game9.jpg" alt="">
                                         <div class="product__item-desc">
                                             <div class="product__icon-list">
                                                 <i class="fa-solid fa-star product__icon-ratting"></i>
@@ -826,9 +987,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="l-2-4">
+                                <div class="l-2-4 col">
                                     <div class="product__item">
-                                        <img src="./assets/img/project_img/Hp9.jpg" alt="">
+                                        <img src="./assets/img/project_img/Game10.jpg" alt="">
                                         <div class="product__item-desc">
                                             <div class="product__icon-list">
                                                 <i class="fa-solid fa-star product__icon-ratting"></i>
@@ -876,9 +1037,9 @@
                         </div>
                         <div class="block__product">
                         <div class="row " >
-                            <div class="l-2-4">
+                            <div class="l-2-4 col">
                                 <div class="product__item">
-                                    <img src="./assets/img/project_img/Hp9.jpg" alt="">
+                                    <img src="./assets/img/project_img/Computer2.jpg" alt="">
                                     <div class="product__item-desc">
                                         <div class="product__icon-list">
                                             <i class="fa-solid fa-star product__icon-ratting"></i>
@@ -907,9 +1068,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="l-2-4">
+                            <div class="l-2-4 col">
                                 <div class="product__item">
-                                    <img src="./assets/img/project_img/Hp9.jpg" alt="">
+                                    <img src="./assets/img/project_img/Computer3.jpg" alt="">
                                     <div class="product__item-desc">
                                         <div class="product__icon-list">
                                             <i class="fa-solid fa-star product__icon-ratting"></i>
@@ -938,9 +1099,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="l-2-4">
+                            <div class="l-2-4 col">
                                 <div class="product__item">
-                                    <img src="./assets/img/project_img/Hp9.jpg" alt="">
+                                    <img src="./assets/img/project_img/Computer4.jpg" alt="">
                                     <div class="product__item-desc">
                                         <div class="product__icon-list">
                                             <i class="fa-solid fa-star product__icon-ratting"></i>
@@ -969,9 +1130,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="l-2-4">
+                            <div class="l-2-4 col">
                                 <div class="product__item">
-                                    <img src="./assets/img/project_img/Hp9.jpg" alt="">
+                                    <img src="./assets/img/project_img/Computer1.jpg" alt="">
                                     <div class="product__item-desc">
                                         <div class="product__icon-list">
                                             <i class="fa-solid fa-star product__icon-ratting"></i>
@@ -1000,9 +1161,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="l-2-4">
+                            <div class="l-2-4 col">
                                 <div class="product__item">
-                                    <img src="./assets/img/project_img/Hp9.jpg" alt="">
+                                    <img src="./assets/img/project_img/Computer5.jpg" alt="">
                                     <div class="product__item-desc">
                                         <div class="product__icon-list">
                                             <i class="fa-solid fa-star product__icon-ratting"></i>
@@ -1033,9 +1194,9 @@
                             </div>
                         </div>
                         <div class="row " >
-                            <div class="l-2-4">
+                            <div class="l-2-4 col">
                                 <div class="product__item">
-                                    <img src="./assets/img/project_img/Hp9.jpg" alt="">
+                                    <img src="./assets/img/project_img/Computer6.jpg" alt="">
                                     <div class="product__item-desc">
                                         <div class="product__icon-list">
                                             <i class="fa-solid fa-star product__icon-ratting"></i>
@@ -1064,9 +1225,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="l-2-4">
+                            <div class="l-2-4 col">
                                 <div class="product__item">
-                                    <img src="./assets/img/project_img/Hp9.jpg" alt="">
+                                    <img src="./assets/img/project_img/Computer5.jpg" alt="">
                                     <div class="product__item-desc">
                                         <div class="product__icon-list">
                                             <i class="fa-solid fa-star product__icon-ratting"></i>
@@ -1095,9 +1256,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="l-2-4">
+                            <div class="l-2-4 col">
                                 <div class="product__item">
-                                    <img src="./assets/img/project_img/Hp9.jpg" alt="">
+                                    <img src="./assets/img/project_img/Computer8.jpg" alt="">
                                     <div class="product__item-desc">
                                         <div class="product__icon-list">
                                             <i class="fa-solid fa-star product__icon-ratting"></i>
@@ -1126,9 +1287,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="l-2-4">
+                            <div class="l-2-4 col">
                                 <div class="product__item">
-                                    <img src="./assets/img/project_img/Hp9.jpg" alt="">
+                                    <img src="./assets/img/project_img/Computer9.jpg" alt="">
                                     <div class="product__item-desc">
                                         <div class="product__icon-list">
                                             <i class="fa-solid fa-star product__icon-ratting"></i>
@@ -1157,9 +1318,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="l-2-4">
+                            <div class="l-2-4 col">
                                 <div class="product__item">
-                                    <img src="./assets/img/project_img/Hp9.jpg" alt="">
+                                    <img src="./assets/img/project_img/Computer10.jpg" alt="">
                                     <div class="product__item-desc">
                                         <div class="product__icon-list">
                                             <i class="fa-solid fa-star product__icon-ratting"></i>
@@ -1194,30 +1355,30 @@
 
                 </div>
             </div>
-            <!-- Blog -->
+
             <div class="img-saw">
                 <svg viewBox="0 0 1920 187" preserveAspectRatio="none" class="trust-background-1"><polygon fill="#33a474" points="1920,187 0,187 0,181 82,172 458,31 778,110 1354,0 1920,182" class="c1"></polygon></svg>
             </div>
-
-             <!-- Counter Up -->
-             <div class="counter__up">
+            
+            <!-- Counter Up -->
+            <div class="counter__up">
                 <div class="row list-counter">
-                    <div class="l-3 counter-item ">
+                    <div class="l-3 col counter-item ">
                         <img src="./assets/icon/icon1.png" alt="">
                         <h2 class="number">45000</h2>
                         <p>Posts</p>
                     </div>
-                    <div class="l-3 counter-item ">
+                    <div class="l-3 col counter-item ">
                         <img src="./assets/icon/icon2.png" alt="">
                         <h2 class="number">28000</h2>
                         <p>Followers</p>
                     </div>
-                    <div class="l-3 counter-item ">
+                    <div class="l-3 col counter-item ">
                         <img src="./assets/icon/icon3.png" alt="">
                         <h2 class="number">150000</h2>
                         <p>Orders</p>
                     </div>
-                    <div class="l-3 counter-item ">
+                    <div class="l-3 col counter-item ">
                         <img src="./assets/icon/icon4.png" alt="">
                         <h2 class="number">12000</h2>
                         <p>Followers</p>
@@ -1225,16 +1386,17 @@
                </div>
             </div>
 
+            <!-- Blog -->
             <div class="content__blog">
-                <div class="row">
-                    <div class="l-8">
+                <div class="row no-gutters">
+                    <div class="col l-8 ">
                         <h1 class="header__blog">Lastest Blog</h1>
                         <div class="blog__btn">
                             <i class="fa-solid fa-arrow-left-long blog__btn-next"></i>
                             <i class="fa-solid fa-arrow-right-long blog__btn-prev"></i>
                         </div>
-                        <div class="blog__content-spaper">
-                            <div class="newspaper">
+                        <div class="row blog__content-spaper">
+                            <div class="newspaper col l-6 ">
                                 <img src="./assets/img/newspaper1.jpg" alt="" class="newspaper__img">
                                 <div class="newspaper__infor">
                                     <div class="newspaper__heading">
@@ -1251,7 +1413,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="newspaper">
+                            <div class="newspaper col l-6 ">
                                 <img src="./assets/img/newspaper2.jpg" alt="" class="newspaper__img">
                                 <div class="newspaper__infor">
                                     <div class="newspaper__heading">
@@ -1270,7 +1432,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="l-4">
+                    <div class="col l-4 ">
                         <h1 class="header__blog">Testimonials</h1>
                         <div class="blog__btn">
                             <i class="fa-solid fa-arrow-left-long blog__btn-next"></i>
@@ -1304,7 +1466,21 @@
                                      "Lorem Ipsum is not simply random text.It has Contrary to popular belief,
                                      not simply random text.It has Contrary to popular."
                                  </div>
-                             </div>
+                            </div>
+                            <div class="blog__customer-post">
+                                <div class="blog__customer-info">
+                                     <img src="./assets/img/customer4.jpg" alt="" class="blog__customer-img">
+                                     <div class="blog__customer-name">
+                                         <span>Justin Bieber</span>
+                                         <span>IOS developer</span>
+                                     </div>
+                                </div>
+                                 
+                                 <div class="blog__customer-desc">
+                                     "Lorem Ipsum is not simply random text.It has Contrary to popular belief,
+                                     not simply random text.It has Contrary to popular."
+                                 </div>
+                            </div>
                         </div>
                     </div>
 
@@ -1336,9 +1512,9 @@
                 </div>                    
             </div>
 
-            <div class="grid wide footer__info">
-                <div class="row">
-                    <ul class="l-3 list__services">
+            <div class="footer__info">
+                <div class="row no-gutters ">
+                    <ul class="l-3 col list__services">
                         <h2 class="services__heading">Customer Services</h2>
                         <li class="item-service"><i class="fa-solid fa-angles-right icon__service-footer"></i><a href="">My Account</a></li>
                         <li class="item-service"><i class="fa-solid fa-angles-right icon__service-footer"></i><a href="">Order History</a></li>
@@ -1346,7 +1522,7 @@
                         <li class="item-service"><i class="fa-solid fa-angles-right icon__service-footer"></i><a href="">Privacy Policy</a></li>
                         <li class="item-service"><i class="fa-solid fa-angles-right icon__service-footer"></i><a href="">Specials</a></li>
                     </ul>
-                    <ul class="l-3 list__services">
+                    <ul class="l-3 col list__services">
                         <h2 class="services__heading">Infomation</h2>
                         <li class="item-service"><i class="fa-solid fa-angles-right icon__service-footer"></i><a href="">About Us</a></li>
                         <li class="item-service"><i class="fa-solid fa-angles-right icon__service-footer"></i><a href="">Blog</a></li>
@@ -1354,13 +1530,13 @@
                         <li class="item-service"><i class="fa-solid fa-angles-right icon__service-footer"></i><a href="">Privacy Policy</a></li>
                         <li class="item-service"><i class="fa-solid fa-angles-right icon__service-footer"></i><a href="">Site Map</a></li>
                     </ul>
-                    <ul class="l-3 list__services">
+                    <ul class="l-3 col list__services">
                         <h2 class="services__heading">About store</h2>
                         <li class="item-service"><i class="fa-solid fa-location-dot icon__service-info"></i>Address:<a href=""> Van Giang,HungYen, VietNam.</a></li>
                         <li class="item-service"><i class="fa-solid fa-envelope icon__service-info"></i>Mail us:<a href="mailto:duc20035555@gmail.com"> duc20035555@gmail.com</a></li>
                         <li class="item-service"><i class="fa-solid fa-phone icon__service-info"></i>Phone:<a href="tel:+0888804085"> 0888804085</a></li>
                     </ul>
-                    <ul class="l-3 list__services">
+                    <ul class="l-3 col list__services">
                         <h2 class="services__heading">HELP & SUPPORT</h2>
                         <li class="item-service"><i class="fa-solid fa-angles-right icon__service-footer"></i><a href="">Product Support</a></li>
                         <li class="item-service"><i class="fa-solid fa-angles-right icon__service-footer"></i><a href="">Support Services</a></li>
@@ -1441,7 +1617,7 @@
                 </div>
 
                 <div class="form__account-yet">
-                    Thành viên mới?<a class="btn-sign-up-js"> Đăng kí </a>tại đây
+                    New member?<a class="btn-sign-up-js"> Sign in </a>now
                 </div>
                 
                 <div class="model-container">

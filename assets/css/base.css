@@ -11,6 +11,12 @@ html {
 .main {
     margin: auto;
 }
+.mr-8 {
+    margin-right: 8px !important;
+}
+.mr-24 {
+    margin-right: 24px !important;
+}
 
 body::-webkit-scrollbar{   width: 10px;
 }
