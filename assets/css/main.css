@@ -491,7 +491,7 @@
     line-height: 20px;
     position: absolute;
     top: -6px;
-    left: 30%;
+    left: 24%;
 }
 .header__cart h3 {
     font-size: 15px;
@@ -712,7 +712,7 @@
     max-width: 100%;
     margin: 10px;
     cursor: pointer;
-
+    left: 50%;
 
 }
 .container .list-dot .dot {
@@ -743,7 +743,7 @@
 
 .product__content .product__name {
     background:  linear-gradient(180deg, #c467f5, #53f3ff);
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -836,6 +836,7 @@
 
 .product__content .product-list img {
     width: 140px;
+    max-width: 100%;
     margin-top: 20px;
 
 }
@@ -979,8 +980,7 @@
 .blog__content-spaper .newspaper,
 .blog__content-spaper .newspaper img 
 {
-    width: 100%;
-    /* width: 360px; */
+    width: 90%;
 }
 .blog__content-spaper .newspaper img:hover {
     cursor: pointer;
@@ -1173,8 +1173,7 @@
 /* Footer__info */
 
 .footer__info {
-    width: 1200px;
-    max-width: 100%;
+    width: 100%;
     color: #fff;
     text-align: left;
 
@@ -1184,6 +1183,7 @@
     position: relative;
     text-transform: uppercase;
     margin-bottom: 40px;
+    margin-top: 24px;
 }
 .footer__info .list__services .services__heading::after {
     content: "";
