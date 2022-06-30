@@ -536,7 +536,7 @@
     transition: all linear .4s;
 
 }
-.menu__list li:hover a {
+.header__menu-primary .menu__list .menu__list-item:hover a {
     color:#e5536c;
 }
 .header__menu-gradient {
