@@ -72,7 +72,7 @@ listCounter.forEach(item =>{
 
 })
 // Model Sign-Up
-var btnLoginModel=document.querySelector('.header__navbar-login-js');
+var btnsLoginModel=document.querySelectorAll('.header__navbar-login-js');
 var btnsCloseModel=document.querySelectorAll('.model-close-btn-js')
 
 var btnSignUpModelReturn=document.querySelector('.btn-sign-up-js');
@@ -99,7 +99,9 @@ function showSignUp() {
 }
 
 //Show and Hide Login
-btnLoginModel.addEventListener('click',showLogin);
+for(var btn of btnsLoginModel) {
+    btn.addEventListener('click',showLogin);
+}
 btnLoginModelReturn.addEventListener('click',showLogin);
 
 //Show and Hide SignUp
@@ -142,6 +144,32 @@ menuHeaderTablet.addEventListener('click',function() {
         headerSubMenu.classList.add('open');
 
     }
+    headerSubMenu.addEventListener('click',function(e) {
+        e.stopPropagation();
+    })
+})
+//Notify Tablet 
+var btnNotifyTablet=document.querySelector('.menu__item-notify-js');
+var notifyModel=document.querySelector('.notify__header-text-tablet');
+var main=document.querySelector('.main');
+function hideNotify() {
+    notifyModel.classList.remove('open');
+}
+function showNotify() {
+    notifyModel.classList.add('open');
+}
+
+btnNotifyTablet.addEventListener('click',function() {
+    var isContain=notifyModel.classList.contains('open');
+    if(isContain) {
+        hideNotify();
+    }else {
+        showNotify();
+    }
+})
+main.addEventListener('click',hideNotify);
+notifyModel.addEventListener('click',function(e) {
+    e.stopPropagation();
 })
 
 
