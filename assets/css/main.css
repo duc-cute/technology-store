@@ -731,7 +731,8 @@
     margin: 10px;
     cursor: pointer;
     left: 50%;
-    transform: translateY(-50%);
+    transform: translateX(-50%);
+    -webkit-user-select: none;
 
 }
 .container .list-dot .dot {
@@ -919,6 +920,7 @@
   height: 33px;
   margin-left: 18px;
   position: relative;
+  -webkit-user-select: none;
 }
 .product-list .select__input span {
     margin-left: 8px;
@@ -939,9 +941,14 @@
     text-align: left;
     display: none;
 }
-.product-list .select__input:hover .select__input-list {
+.product-list .select__input-list.open {
     display: block;
 }
+.product-list .select__input-list .select__input-list-price.open {
+    display: block;
+}
+
+
 .product-list .select__input-sort {
     padding: 12px;   
 }

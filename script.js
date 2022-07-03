@@ -171,6 +171,49 @@ main.addEventListener('click',hideNotify);
 notifyModel.addEventListener('click',function(e) {
     e.stopPropagation();
 })
+//select category
+var btnSelect=document.querySelector('.select__input-js');
+var btnSelectPrices=document.querySelector('.select__input-sort-js');
+var selectInputList=document.querySelector('.select__input-list-js');
+var selectInputPrices=document.querySelector('.select__input-list-price-js');
+function hideSelectInput() {
+    selectInputList.classList.remove('open');
+}
+function showSelectInput() {
+    selectInputList.classList.add('open');
+}
+function hideSelectPrices() {
+    selectInputPrices.classList.remove('open');
+}
+function showSelectPrices() {
+    selectInputPrices.classList.add('open');
+}
+
+btnSelect.addEventListener('click',function() {
+    var isContain=selectInputList.classList.contains('open');
+    if(isContain) {
+        hideSelectInput();
+    }else {
+        showSelectInput();
+    }
+})
+selectInputList.addEventListener('click',function(e) {
+    e.stopPropagation();
+})
+btnSelectPrices.addEventListener('click',function() {
+    var isContain=selectInputPrices.classList.contains('open');
+    if(isContain) {
+        hideSelectPrices();
+    }else {
+        showSelectPrices();
+    }
+
+})
+main.addEventListener('click',hideSelectPrices);
+// notifyModel.addEventListener('click',function(e) {
+//     e.stopPropagation();
+// })
+
 
 
 
