@@ -943,7 +943,7 @@
     display: none;
 }
 
-.select__input:hover > .select__input-list {
+.select__input:hover > .select__input-list-des {
     display: block;
 }
 .product-list .home-label-sort {
