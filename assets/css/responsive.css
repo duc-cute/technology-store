@@ -242,8 +242,12 @@
     }
     .model-inner {
         position: fixed;
-        inset: 0px;
-        background-color: rgb(255, 255, 255);
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: #fff;
+    }
     
     }
     .model-inner .model-container .form-control input {
