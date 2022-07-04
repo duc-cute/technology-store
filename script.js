@@ -150,6 +150,7 @@ menuHeaderTablet.addEventListener('click',function() {
 })
 //Notify Tablet 
 var btnNotifyTablet=document.querySelector('.menu__item-notify-js');
+var btnCloseNotifyMobile=document.querySelector('.notify__icon-mobile-js');
 var notifyModel=document.querySelector('.notify__header-text-tablet');
 var main=document.querySelector('.main');
 function hideNotify() {
@@ -167,6 +168,7 @@ btnNotifyTablet.addEventListener('click',function() {
         showNotify();
     }
 })
+btnCloseNotifyMobile.addEventListener('click',hideNotify);
 main.addEventListener('click',hideNotify);
 notifyModel.addEventListener('click',function(e) {
     e.stopPropagation();

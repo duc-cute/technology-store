@@ -16,6 +16,12 @@
     .notify__header-text-tablet.open {
         display: block;
     }
+    .header__list-menu-tablet {
+        left: 0;
+    }
+    /* .select__input:hover > .select__input-list {
+        display: none;
+    } */
     .container .list-dot {
        margin: 0;
     
@@ -250,7 +256,7 @@
 
     }
     
-    }
+    
     .model-inner .model-container .form-control input {
         width: 420px;
         max-width: 100%;
@@ -270,7 +276,14 @@
     margin-top: 36px;
 }
   
-
+.notify__header-text-tablet {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
 
 
    
