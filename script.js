@@ -210,9 +210,7 @@ btnSelectPrices.addEventListener('click',function() {
 
 })
 main.addEventListener('click',hideSelectPrices);
-// notifyModel.addEventListener('click',function(e) {
-//     e.stopPropagation();
-// })
+
 
 
 

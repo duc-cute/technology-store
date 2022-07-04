@@ -236,6 +236,34 @@
         font-size: 1.6rem;
         min-width: 36px;
     }
+    /* Model */
+    .model-overley {
+        display: none;
+    }
+    .model-inner {
+        position: fixed;
+        inset: 0px;
+        background-color: rgb(255, 255, 255);
+    
+    }
+    .model-inner .model-container .form-control input {
+        width: 420px;
+        max-width: 100%;
+    }
+    .model-body {
+        animation: none;
+    }
+    .model-inner .form__socia div[class*="access__socia-"] {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 16px;
+
+    }
+    
+
+.model-inner .model-container .form__btn-access {
+    margin-top: 36px;
+}
   
 
 
