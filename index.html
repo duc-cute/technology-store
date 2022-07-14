@@ -182,7 +182,10 @@
                                     </div>
                                     <!-- Cart Product  -->
                                     <div class="cart__list-product"> 
-                                        <div class="header__cart-header"><h3>Sản phẩm đã thêm</h3></div>
+                                        <div class="header__cart-header">
+                                            <i class="fa-solid fa-cart-plus header__cart-header-icon"></i>
+                                            <h3>Sản phẩm đã thêm</h3>
+                                        </div>
                                         <ul class="list__product-added">
                                             <li class="cart-item">
                                               <a href="" class="cart-item-link">
@@ -420,16 +423,19 @@
                             </button>
                         </div>
                         <div class=" header__cart">
-                            <i class="fa-solid fa-cart-shopping cart__list-btn">
-                                <div class="cart__list cart__list-js">
-                                    <!-- Cart Empty -->
+                            <i class="fa-solid fa-cart-shopping cart__list-btn-mb ">
+                                <div class="cart__list cart__list-mb cart__list-js-mb">
+                                    <!-- Cart Empty Mobile -->
                                     <div class="cart__empty">
                                         <img src="./assets/img/no_cart.png" alt="" class="cart__empty-img">
                                         <p class="cart__empty-text">No products in the cart</p>
                                     </div>
-                                    <!-- Cart Product  -->
+                                    <!-- Cart Product Mobile -->
                                     <div class="cart__list-product"> 
-                                        <div class="header__cart-header"><h3>Sản phẩm đã thêm</h3></div>
+                                        <div class="header__cart-header">
+                                            <i class="fa-solid fa-cart-plus header__cart-header-icon "></i>
+                                            <h3>Sản phẩm đã thêm</h3>
+                                        </div>
                                         <ul class="list__product-added">
                                             <li class="cart-item">
                                               <a href="" class="cart-item-link">
@@ -452,7 +458,7 @@
                                             <li class="cart-item">
                                                 <a href="" class="cart-item-link">
                                                   <div class="cart__img-product">
-                                                      <img src="./assets/img/project_img/Hp8.jpg" alt="">
+                                                      <img src="./assets/img/project_img/Hp5.jpg" alt="">
                                                   </div>
                                                   <span class="cart__name-product">Sản phẩm HeadPhone chính hãng được sản xuất bới Dev-House</span>
       
@@ -470,7 +476,7 @@
                                             <li class="cart-item">
                                                 <a href="" class="cart-item-link">
                                                   <div class="cart__img-product">
-                                                      <img src="./assets/img/project_img/Hp8.jpg" alt="">
+                                                      <img src="./assets/img/project_img/Hp7.jpg" alt="">
                                                   </div>
                                                   <span class="cart__name-product">Sản phẩm HeadPhone chính hãng được sản xuất bới Dev-House</span>
       
@@ -485,7 +491,62 @@
                                                   <button class="cart__btn-remove">Xóa</button>
                                                 </div>
                                             </li>
+                                            <li class="cart-item">
+                                                <a href="" class="cart-item-link">
+                                                  <div class="cart__img-product">
+                                                      <img src="./assets/img/project_img/Hp10.jpg" alt="">
+                                                  </div>
+                                                  <span class="cart__name-product">Sản phẩm HeadPhone chính hãng được sản xuất bới Dev-House</span>
+      
+                                                  <div class="cart__desc-price">
+                                                      <span class="cart__price-product">400.000</span>
+                                                      <span class="cart__price-quantity">x3</span>
+                                                    </div>
+                                                </a>
+                                               
+                                                <div class="cart__desc-info">
+                                                  <span class="cart__info-product">Mô tả sản phẩm HeadPhone.</span>
+                                                  <button class="cart__btn-remove">Xóa</button>
+                                                </div>
+                                            </li>
+                                            <li class="cart-item">
+                                                  <a href="" class="cart-item-link">
+                                                    <div class="cart__img-product">
+                                                        <img src="./assets/img/project_img/Hp2.jpg" alt="">
+                                                    </div>
+                                                    <span class="cart__name-product">Sản phẩm HeadPhone chính hãng được sản xuất bới Dev-House</span>
+        
+                                                    <div class="cart__desc-price">
+                                                        <span class="cart__price-product">2.070.000</span>
+                                                        <span class="cart__price-quantity">x1</span>
+                                                      </div>
+                                                  </a>
+                                                 
+                                                  <div class="cart__desc-info">
+                                                    <span class="cart__info-product">Mô tả sản phẩm HeadPhone.</span>
+                                                    <button class="cart__btn-remove">Xóa</button>
+                                                  </div>
+                                            </li>
+                                            <li class="cart-item">
+                                                  <a href="" class="cart-item-link">
+                                                    <div class="cart__img-product">
+                                                        <img src="./assets/img/project_img/Hp3.jpg" alt="">
+                                                    </div>
+                                                    <span class="cart__name-product">Sản phẩm HeadPhone chính hãng được sản xuất bới Dev-House</span>
+        
+                                                    <div class="cart__desc-price">
+                                                        <span class="cart__price-product">1.000.000</span>
+                                                        <span class="cart__price-quantity">x4</span>
+                                                      </div>
+                                                  </a>
+                                                 
+                                                  <div class="cart__desc-info">
+                                                    <span class="cart__info-product">Mô tả sản phẩm HeadPhone.</span>
+                                                    <button class="cart__btn-remove">Xóa</button>
+                                                  </div>
+                                            </li>
                                         </ul>
+                                        <i class="fa-solid fa-xmark cart__list-product-icon-close cart__list-product-icon-close-js"></i>
                                         <a class="header__cart-viewall"><span>Xem giỏ hàng</span></a>
                                     </div>  
     
@@ -540,17 +601,56 @@
                 <div class="row no-gutters product__content">
                     <div class="l-2 col product-category">
                         <nav class="category">
-                            <h2 class="product-item-heading">Category</h2>
+                            <h2 class="product-item-heading">
+                                <i class="fa-solid fa-bars"></i>
+                                Category
+                            </h2>
                             <ul class="product__list-name">
-                               <li class="product-item item-separate-bottom-category"><a href="" class="product-item-link ">Headphone</a></li>
-                               <li class="product-item item-separate-bottom-category"><a href="" class="product-item-link ">Game</a></li>
-                               <li class="product-item item-separate-bottom-category"><a href="" class="product-item-link ">Laptop</a></li>
-                               <li class="product-item item-separate-bottom-category"><a href="" class="product-item-link ">SmartPhone</a></li>
-                               <li class="product-item item-separate-bottom-category"><a href="" class="product-item-link ">Electronic Watch</a></li>
-                               <li class="product-item item-separate-bottom-category"><a href="" class="product-item-link ">Washing machine</a></li>
-                               <li class="product-item item-separate-bottom-category"><a href="" class="product-item-link ">DishWasher</a></li>
-                               <li class="product-item item-separate-bottom-category"><a href="" class="product-item-link ">Game Console</a></li>
-                               <li class="product-item item-separate-bottom-category"><a href="" class="product-item-link ">Air-Conditioner</a></li>
+                               <li class="product-item item-separate-bottom-category">
+                                <a href="" class="product-item-link ">
+                                <i class="fa-solid fa-caret-right"></i>
+                                Headphone</a></li>
+
+                               <li class="product-item item-separate-bottom-category">
+                                <a href="" class="product-item-link ">
+                                <i class="fa-solid fa-caret-right"></i>
+                                Game</a></li>
+
+                               <li class="product-item item-separate-bottom-category">
+                                <a href="" class="product-item-link ">
+                                <i class="fa-solid fa-caret-right"></i>
+                                Laptop</a></li>
+
+                               <li class="product-item item-separate-bottom-category">
+                                <a href="" class="product-item-link ">
+                                <i class="fa-solid fa-caret-right"></i>
+                                SmartPhone</a></li>
+
+                               <li class="product-item item-separate-bottom-category">
+                                <a href="" class="product-item-link ">
+                                <i class="fa-solid fa-caret-right"></i>
+                                Electronic Watch</a></li>
+
+                               <li class="product-item item-separate-bottom-category">
+                                <a href="" class="product-item-link ">
+                                <i class="fa-solid fa-caret-right"></i>
+                                Washing machine</a></li>
+
+                               <li class="product-item item-separate-bottom-category">
+                                <a href="" class="product-item-link ">
+                                <i class="fa-solid fa-caret-right"></i>
+                                DishWasher</a></li>
+
+                               <li class="product-item item-separate-bottom-category">
+                                <a href="" class="product-item-link ">
+                                <i class="fa-solid fa-caret-right"></i>
+                                Game Console</a></li>
+
+                               <li class="product-item item-separate-bottom-category">
+                                <a href="" class="product-item-link ">
+                                <i class="fa-solid fa-caret-right"></i>
+                                Air-Conditioner</a></li>
+
                                <li class="product-item "><a href="" class="product-item-link">Duc-cute</a></li>
                             </ul>
                         </nav>

@@ -387,7 +387,7 @@
     position: relative;
     font-weight: 500;
 }
-.header__cart i {
+.header__cart > i {
     position: relative;
     font-size: 32px;
     color: #ee4d2d;
@@ -402,7 +402,8 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     right: 16px;
     top: 46px;
-   min-width: 420px;
+    width: 420px;
+    max-width: 420px;
     /* padding: 32px 0 8px 0; */
     display: none;
     transform-origin: calc(100% - 20px) top;
@@ -446,10 +447,17 @@
     cursor: default;
     -webkit-user-select: none;
 }
-
+.cart__list .cart__list-product .header__cart-header{
+    display: flex;
+    align-items: center;
+}
+.cart__list .cart__list-product .header__cart-header .header__cart-header-icon{
+    font-size: 24px;
+    margin-right: 8px;
+}
 .cart__list .cart__list-product .header__cart-header h3{
-    font-size: 17px;
-    color: #333;
+    font-size: 20px;
+    color: #ee4d2d;
 }
 
 .cart__list .cart__list-product .list__product-added{
@@ -479,6 +487,9 @@
 .list__product-added .cart-item .cart__desc-price{
     display: flex;
     justify-content: center;
+}
+.list__product-added .cart-item .cart__desc-price span{
+    color: #333;
 }
 .list__product-added .cart-item img{
     width: 52px;
@@ -855,9 +866,14 @@
     
 }
 .product__content .category h2 {
-    font-size: 17px;
-    padding: 8px 0 0 18px;
-    font-weight: 400;
+    font-size: 18px;
+    padding: 8px 0 4px 18px;
+    font-weight: 450;
+
+}
+.category .product-item-heading >i {
+    margin-right: 4px;
+
 }
 
 .product__content .category .product__list-name{
@@ -868,7 +884,7 @@
 }
 .product__content .category .product__list-name .product-item{
     position: relative;
-    padding: 8px 24px;
+    padding: 8px 16px;
     
 }
 .category .product__list-name .product-item:first-child .product-item-link,
@@ -900,7 +916,11 @@
     padding:2px 4px;
 }
 
+.category .product__list-name .product-item .product-item-link >i{
+    font-size: 12px;
+    margin-right: 4px;
 
+}
 
 /* Product-list */
 .product__content .product-list {
@@ -1313,6 +1333,7 @@
 .blog__content-spaper .newspaper .newspaper__infor {
     padding: 16px 0 8px 0;
     line-height: 1.4;
+    width: 90%;
 
 }
 

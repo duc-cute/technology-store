@@ -178,6 +178,31 @@
     .prices-number {
         display: none;
     }
+    .header__cart .cart__list-mb {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+    .cart__list-product {
+        position: relative;
+    }
+    .cart__list-product-icon-close {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        font-size: 26px;
+        padding: 8px;
+        color: #333;
+        opacity: 0.4;
+    }
+    .cart__list-product-icon-close:hover {
+        opacity: 0.7;
+       transform: scale(105%);
+    }
 
     .menu__list {
        display: none;
@@ -288,6 +313,3 @@
 
    
 }
-@media (hover: none) {
-    
- }
